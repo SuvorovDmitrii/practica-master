@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load tags_filter %}
+
+{% block title %} Главная {% endblock %}
+
+{% block content %}
+
+<div class="main" style="background: url({% static 'media/BG.png' %});">
+    <div class="content">
+        <h1>ВЫ ЛОМАЕТЕ - МЫ ЧИНИМ!</h1>
+        <div class="btn"><a href="{% url 'order_create' %}">Перейти в каталог</a></div>
+    </div>
+</div>
+
+<div class="service" id="service">
+
+    <h2>УСЛУГИ</h2>
+
+
+    <select>
+        <option>--- выберите категорию ---</option>
+    </select>
+
+    <div class="cards">
+      {% for uslugi in usluga %}
+        <div class="card">
+            <img src="{% static 'media/filler.png' %}">
+
+
+            <div class="card-content">
+                <p>Категория: {{uslugi.cat}}</p>
+                <p>Наименование: {{uslugi.name}}</p>
+                <div class="btn"><a href="{% url 'order_create' %}">ЗАПИСАТЬСЯ</a></div>
+            </div>
+
+
+        </div>
+   {% endfor %}
+    </div>
+
+</div>
+
+<div class="map">
+    <div class="h2">
+        <h2>ГДЕ НАС НАЙТИ</h2>
+    </div>
+    <img src="{% static 'media/map.png' %}">
+</div>
+
+        {% endblock %}

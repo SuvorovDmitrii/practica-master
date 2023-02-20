@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+background: #EEEEEE;
+}
+
+.main {
+    height: 780px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 60px;
+    margin-bottom: 200px;
+}
+
+.btn > a {
+    color: black;
+    background: #ACC5F4;
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 4px solid #7E97C8;
+    transition: .2s;
+
+}
+
+.btn {
+    margin: 20px;
+}
+
+.btn > a:hover  {
+    background: #7E97C8;
+    border: 4px solid #ACC5F4;
+}
+
+.content {
+    height: 200px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4)
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+
+nav a:hover{
+    color: #ACC5F4;
+}
+
+.service {
+    max-width: 1440px;
+    padding: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #ACC5F4;
+    width: 400px;
+    margin: 10px;
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border: 2px solid #A1A1A1;
+    outline: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    box-shadow: 5px 9px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px;
+}
+
+.card-content {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 280px;
+    object-fit:cover;
+}
+
+.map .h2 {
+    width: 1440px;
+}
+
+.map img {
+    width: 100%;
+}
+
+footer {
+    height: 150px;
+    background:#ACC5F4;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.main form{
+    background: white;
+    padding: 50px;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    box-shadow: 0px 7px 5px rgba(0,0,0,0.3);
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+}
+
+form input {
+    width: 250px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 0px;
+    width: 250px;
+    border: none;
+    background: #ACC5F4;
+    transition: .2s;
+    font-size: 20px;
+}
+
+form button:hover {
+    background: #8db3fa;
+}
+
+.helptext {
+    color: rgba(0,0,0, 0.4);
+    font-size: 14px;
+    width: 300px;
+}
+
+.errorlist {
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    list-style: none;
+    width: 500px;
+    font-size: 14px;
+    text-align: left;
+    background: white;
+    padding: 10px;
+    border-radius: 15px 0 0 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.login_menu {
+    color: white;
+    display: flex;
+}
+
+.login_menu p {
+    margin: 0 20px;
+}

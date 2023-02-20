@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}СТО{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/js" src="{% static 'js/jquery-3.6.3.min.js'}"></script>
+    <script type="text/js" src="{% static 'js/js.js'}"></script>
+</head>
+<body>
+
+    <nav>
+
+        <div class="menu">
+            <img src="{% static 'media/logo.png' %}">
+            <a href="{% url 'index' %}">Главная</a>
+            <a href="#service">Каталог</a>
+        </div>
+
+
+         <div class="login_menu">
+             {% if user.is_authenticated %}
+             <p>Здравствуйте, {{ user }}</p>
+             <a href="{% url 'logout' %}">Выйти</a>
+            {% else %}
+            <a href="{% url 'login' %}">Войти</a>
+             <a href="{% url 'registration' %}">Регистрация</a>
+            {% endif %}
+        </div>
+
+    </nav>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

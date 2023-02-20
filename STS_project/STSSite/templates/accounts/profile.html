@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="card-body">
+
+    <p><strong>{{request.user.last_name}} {{request.user.first_name}} {% if user.patronomyc %}{{user.patronomyc}}{% endif %}</strong></p>
+    {% for order in orders %}
+     <!-- тут типа твой не въебеный шаблон заказов пользователя-->
+    <p>{{order.usluga}}</p>1
+    {% endfor %}
+</div>
+
+{% endblock %}
